@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\platform">
+      <UniqueIdentifier>{d53917b9-d7f5-48cf-aa88-2b555ba2735e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\platform\win">
+      <UniqueIdentifier>{76d9aec5-ac4d-453c-95bb-a9eed9502256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\platform\ios">
+      <UniqueIdentifier>{0ce8a51b-8550-4242-8b6d-8ea5ae90b4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\platform\android">
+      <UniqueIdentifier>{ef10bc08-d724-4b3f-ab01-6cfe3c0b7238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\platform\mac">
+      <UniqueIdentifier>{e4ba8cb5-c982-49cc-9e39-1d8dacac2a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\platform\linux">
+      <UniqueIdentifier>{bdfad4cb-6ddd-4aed-b998-be6da786205f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="file_input_stream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="m3g_loader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="device.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="car_loader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="database.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="car_asset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="car.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="my_assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\c\util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="file_input_stream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="m3g_loader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="win_main.cpp">
+      <Filter>源文件\platform\win</Filter>
+    </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="car_loader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="database.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="my_assert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\c\util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

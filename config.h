@@ -1,0 +1,12 @@
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+
+#define PLATFORM_WINDOWS 0
+#define PLATFORM_IOS 1
+#define PLATFORM_ANDROID 2
+#define PLATFORM_MAC 3
+#define PLATFORM_LINUX 4
+
+#define PLATFORM PLATFORM_WINDOWS
+
+#endif
