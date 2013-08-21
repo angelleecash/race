@@ -79,6 +79,8 @@
   <ItemGroup>
     <ClInclude Include="..\c\util.h" />
     <ClInclude Include="application.h" />
+    <ClInclude Include="character_data_header.h" />
+    <ClInclude Include="serialization_type.h" />
     <ClInclude Include="my_assert.h" />
     <ClInclude Include="car.h" />
     <ClInclude Include="car_asset.h" />
@@ -89,6 +91,7 @@
     <ClInclude Include="device.h" />
     <ClInclude Include="file_input_stream.h" />
     <ClInclude Include="m3g_loader.h" />
+    <ClInclude Include="my_object.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\c\util.cpp" />
@@ -99,6 +102,7 @@
     <ClCompile Include="database.cpp" />
     <ClCompile Include="file_input_stream.cpp" />
     <ClCompile Include="m3g_loader.cpp" />
+    <ClCompile Include="my_object.cpp" />
     <ClCompile Include="win_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

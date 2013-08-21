@@ -7,60 +7,65 @@
 
 using namespace std;
 
-class FileInputStream
+namespace race
 {
-public:
-	FileInputStream(string path);
-	
-	int Read(Byte* buffer, int n);
 
-	template<class T>
-	bool ReadPrimitive(T& value)
+	class FileInputStream
 	{
-		Uint32 bytes = sizeof(T);
+	public:
+		FileInputStream(string path);
 
-		int bytesRead = Read(reinterpret_cast<Byte*>(&value), bytes);
+		int Read(Byte* buffer, int n);
 
-		return bytesRead == bytes;
-	}
-	
-	template<class T>
-	bool ReadPrimitives(T* value, int n)
-	{
-		bool success = true;
-
-		for(int i=0; i<n; i++)
+		template<class T>
+		bool ReadPrimitive(T& value)
 		{
-			success &&= Read(*T);
+			Uint32 bytes = sizeof(T);
 
-			if(!success)
-			{
-				break;
-			}
-			value++;
+			int bytesRead = Read(reinterpret_cast<Byte*>(&value), bytes);
+
+			return bytesRead == bytes;
 		}
 
-		return success;
-	}
+		template<class T>
+		bool ReadPrimitives(T* value, int n)
+		{
+			bool success = true;
 
-	int GetPosition();
-	int SetPosition(int position);
+			for(int i=0; i<n; i++)
+			{
+				success &&= Read(*T);
 
-	int BytesLeft()
-	{
-		return _size - _position;
-	}
+				if(!success)
+				{
+					break;
+				}
+				value++;
+			}
 
-	int GetSize();
+			return success;
+		}
 
-	virtual ~FileInputStream();
+		int GetPosition();
+		int SetPosition(int position);
 
-	FILE* file;
-	Byte* data;
+		int BytesLeft()
+		{
+			return _size - _position;
+		}
 
-private:
-	Int32 _size;
-	Int32 _position;
-};
+		int GetSize();
+
+		virtual ~FileInputStream();
+
+		FILE* file;
+		Byte* data;
+
+	private:
+		Int32 _size;
+		Int32 _position;
+	};
+
+}
 
 #endif

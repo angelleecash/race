@@ -1,10 +1,14 @@
 #ifndef __CAR_H__
 #define __CAR_H__
-
-class Car
+namespace race
 {
-public:
-	Car();
-};
+
+	class Car
+	{
+	public:
+		Car();
+	};
+
+}
 
 #endif

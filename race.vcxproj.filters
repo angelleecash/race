@@ -69,6 +69,15 @@
     <ClInclude Include="..\c\util.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="my_object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="character_data_header.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="serialization_type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="file_input_stream.cpp">
@@ -96,6 +105,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\c\util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="my_object.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

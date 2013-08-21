@@ -2,6 +2,11 @@
 
 #include "boost/smart_ptr/shared_ptr.hpp"
 
-Car::Car()
+namespace race
 {
+
+	Car::Car()
+	{
+	}
+
 }

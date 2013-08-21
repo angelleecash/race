@@ -8,16 +8,18 @@
 using std::string;
 
 
-class CarLoader
+namespace race
 {
-public:
-	CarLoader(string carName);
-	Car Load();
+	class CarLoader
+	{
+	public:
+		CarLoader(string carName);
+		Car Load();
 
-private:
-	string _carName;
-	Database _database;
-	
-};
+	private:
+		string _carName;
+		Database _database;
 
+	};
+}
 #endif

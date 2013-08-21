@@ -6,7 +6,7 @@ void ASSERT(int condition, string message)
 	//assert(condition);
 	if(!condition)
 	{
-		throw;
+		throw (message);
 	}
 	
 }
